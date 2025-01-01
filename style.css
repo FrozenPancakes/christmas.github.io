@@ -1,3 +1,91 @@
-p {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+  background-color: #98bad5;
+}
+
+h1, p, h2, a{
+    color: 	#304674;
+    font-family: PlayFair Display;
     text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p, a {
+  font-size: 25px;
+  display:block;
+}
+
+
+
+.snow {
+  animation: turns 4s infinite;
+  width: 200px;
+  margin: 0;
+  position: absolute;
+  top:  170px;
+  left: 7%;
+}
+
+.snow2 {
+  animation: turns2 5.5s infinite;
+  width: 120px;
+  margin: 0;
+  position: absolute;
+  top:  70px;
+  left: 15%;
+}
+
+.snow3 {
+  animation: turns2 4s infinite;
+  width: 120px;
+  margin: 0;
+  position: absolute;
+  top:  320px;
+  left: 14%;
+}
+
+.snow4 {
+  animation: turns 5.3s infinite;
+  width: 150px;
+  margin: 0;
+  position: absolute;
+  top:  360px;
+  left: 78%;
+}
+
+.snow6 {
+  animation: turns2 3s infinite;
+  width: 125px;
+  margin: 0;
+  position: absolute;
+  top:  120px;
+  left: 78%;
+}
+
+.snow5 {
+  animation: turns2 3s infinite;
+  width: 235px;
+  margin: 0;
+  position: absolute;
+  top:  110px;
+  left: 84%;
+}
+
+
+@keyframes turns {
+  0% {rotate: 0deg;}
+  33% {rotate: -290deg;}
+  66% {rotate: 90deg;}
+  100% {rotate: 0deg;}
+}
+
+@keyframes turns2 {
+  0% {rotate: -80deg;}
+  33% {rotate: 290deg;}
+  66% {rotate:  20deg;}
+  100% {rotate: -80deg;}
 }
